@@ -18,11 +18,31 @@ var a = doc.getElementsByClassName('book');
 document.querySelector("body").style.backgroundColor = "lightblue";
 
 function ndrysho(){
-  document.querySelector('button').style.backgroundColor = "black"
+  document.querySelector('#button').style.backgroundColor = "black"
+}
+
+document.getElementById('button').addEventListener("mouseover", function(){
+  this.innerHTML = "clicked!"
+  this.style.backgroundColor = "lihtblue"
+})
+
+
+function lali(){
+  document.querySelector('#button').style.backgroundColor = "black"
+  document.querySelector('#button').innerHTML = "ikaaa!"
+
 }
 
 
-document.getElementById("button").addEventListener("dblclick", function(){
+document.querySelector('button').addEventListener("click", function(){
 
-  this.innerHTML = "changed!"
+document.querySelector('#button').style.backgroundColor = "#c6e1d0" ;
+this.innerHTML = "Ndrysho lali"
 })
+
+
+var paragrafi = document.createElement('p');
+var node = document.createTextNode ('This  is a text node');
+paragrafi.appendChild(node);
+var demo = document.querySelector('#demo2');
+
