@@ -19,12 +19,25 @@ $('p').mouseleave(function() {
 //   })
 
 
-$("#button").click(function(){
+$('#button').click(function(){
     $('#epara').fadeOut();
     $('#edyta').fadeOut(3000);
     $('#etreta').fadeOut("slow"); 
 })
 
+$('#button1').click(function(){
+  $('#paragraf').prepend('<p id="para"> Ore Mesimore </p>');
+})
+
+
+$('button').dblclick(function(){
+
+$('#para').toggleClass('highlight');
+});
+
+$('button').mouseenter(function(){
+  $('#paragraf').toggleClass('fontsize')
+})
 
 
 
